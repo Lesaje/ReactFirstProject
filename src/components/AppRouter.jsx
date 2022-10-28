@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import Navbar from "./UI/navbar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "../router";
 import {AuthContext} from "../context";

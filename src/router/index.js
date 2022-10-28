@@ -6,18 +6,14 @@ import {ABOUT_ROUTE, DEFAULT, LOGIN, POSTS_COMMENTS_ROUTE, POSTS_ROUTE} from "..
 import Login from "../pages/Login";
 
 export const privateRoutes = [
-    {path: ABOUT_ROUTE, Component: About},
-    {path: POSTS_ROUTE, Component: Posts},
-    {
-        path: POSTS_COMMENTS_ROUTE,
-        Component: PostIdPage
-    },
-    {
-        path: DEFAULT,
-        Component: Error
-    }
+    {path: ABOUT_ROUTE, component: <About/>},
+    {path: POSTS_ROUTE, component: <Posts/>},
+    {path: POSTS_COMMENTS_ROUTE, component: <PostIdPage/>},
+    {path: LOGIN, component: <Posts/>},
+    {path: DEFAULT, component: <Error/>}
 ]
 
 export const publicRoutes = [
-    {path: LOGIN, Component: Login}
+    {path: LOGIN, component: <Login/>},
+    {path: DEFAULT, component: <Login/>}
 ]
