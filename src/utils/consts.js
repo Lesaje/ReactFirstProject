@@ -1,0 +1,5 @@
+export const ABOUT_ROUTE = '/about'
+export const POSTS_ROUTE = '/posts'
+export const POSTS_COMMENTS_ROUTE = '/posts/:id'
+export const LOGIN = '/login'
+export const DEFAULT = '*'
